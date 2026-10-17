@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- 1. Header: Hiển thị tiêu đề trang -->
+        <header class="header">
+            <h1>🌐 FlexPortal</h1>
+            <p>Bố cục trang web Responsive hoàn chỉnh bằng CSS Flexbox</p>
+        </header>
+
+        <!-- 2. Navigation: Chứa menu điều hướng -->
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Vùng thân trang: Main Content & Sidebar -->
+        <div class="content-wrapper">
+            <!-- 3. Main Content: Khu vực hiển thị nội dung chính -->
+            <main class="main-content">
+                <article class="post">
+                    <h2>Bố cục Responsive thông minh với CSS Flexbox</h2>
+                    <p class="meta">Đăng ngày 18/10/2026 • Chuyên mục: Frontend Web Design</p>
+                    <p>CSS Flexbox (Flexible Box Layout) là mô hình bố cục một chiều mạnh mẽ, cung cấp khả năng tự động phân bổ không gian và căn chỉnh các phần tử con một cách linh hoạt.</p>
+                    
+                    <div class="highlight-card">
+                        <h3>Đặc điểm thiết kế Responsive:</h3>
+                        <ul>
+                            <li><strong>Trên Desktop (&gt; 768px):</strong> Header và Menu trải rộng toàn bộ chiều ngang. Khu vực thân trang xếp song song: Main Content chiếm 75% (<code>flex: 3</code>), Sidebar chiếm 25% (<code>flex: 1</code>).</li>
+                            <li><strong>Trên Mobile (&le; 768px):</strong> Thuộc tính <code>flex-direction: column</code> được kích hoạt thông qua Media Query, giúp toàn bộ các khối tự động xếp chồng theo chiều dọc một cách gọn gàng và dễ đọc.</li>
+                        </ul>
+                    </div>
+
+                    <p>Mô hình Flexbox giúp giao diện hiển thị tối ưu trên mọi kích thước màn hình từ điện thoại thông minh, máy tính bảng đến màn hình máy tính để bàn độ phân giải cao.</p>
+                </article>
+            </main>
+
+            <!-- 4. Sidebar: Chứa nội dung phụ (tin tức, quảng cáo, v.v.) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>📌 Tin tức mới nhận</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">Xu hướng CSS Flexbox 2026</a></li>
+                        <li><a href="#">Tối ưu trải nghiệm người dùng trên Mobile</a></li>
+                        <li><a href="#">Tự động co giãn phần tử với Flexbox</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget promo-box">
+                    <span class="badge">Quảng cáo</span>
+                    <h4>Khóa Học Thiết Kế Web Hiện Đại</h4>
+                    <p>Nắm vững HTML5, CSS3, Flexbox, CSS Grid và Responsive Design từ cơ bản đến nâng cao.</p>
+                    <button class="btn-promo">Đăng ký ngay</button>
+                </div>
+            </aside>
+        </div>
+
+        <!-- 5. Footer: Hiển thị thông tin cuối trang -->
+        <footer class="footer">
+            <p>&copy; 2026 FlexPortal. Thực hành xây dựng bố cục trang web Responsive bằng CSS Flexbox.</p>
+            <p class="footer-links">
+                <a href="#">Chính sách bảo mật</a> | 
+                <a href="#">Điều khoản sử dụng</a> | 
+                <a href="#">Liên hệ hỗ trợ</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
